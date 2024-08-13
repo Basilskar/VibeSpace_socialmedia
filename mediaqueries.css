@@ -1,7 +1,7 @@
 /*--Media Queries for small laptops and big tablets--*/
 @media screen and (max-width:1200px){
     .container{
-        width:98%;
+        width:97%;
     }
     main .container {
         grid-template-columns:5rem auto ;
@@ -22,20 +22,17 @@
         display:none;
     }
     .customize-theme .card{
-        width:100%;
+        width:90%;
        
     }
   .customize-theme .background .choose-bg >div{
-         width:70px;
+         width: 25%;
 
   }
   .customize-theme .choose-bg >div span{
-    display: none;;
+    display: none;
   }
-  .customize-theme .background .choose-bg {
-    display:flex;
-    justify-content: space-between;
-  }
+  
     main  .right {
         display: none;
     }

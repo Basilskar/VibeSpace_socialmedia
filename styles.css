@@ -582,7 +582,8 @@ width:100;
     font-size: 0.9rem;
    display:none;
    margin-top: -2rem;
-   margin-left:10%;
+   margin-left:5%;
+   margin-right:5%;
   }
   .customize-theme .card {
     background: var(--color-white);

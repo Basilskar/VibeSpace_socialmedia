@@ -74,8 +74,8 @@ const openThemeModal = () => {
 
 // Close theme customization modal when clicking on empty space inside the modal
 const closeThemeModal = (e) => {
-    // Check if the click is on the empty space inside the modal, not on the modal content
-    if (e.target === themeModalContent) {
+    // Close modal if the click is either on the backdrop or on the empty space inside the modal content
+    if (e.target.classList.contains('customize-theme') || e.target === themeModalContent) {
         themeModal.style.display = 'none';
     }
 }

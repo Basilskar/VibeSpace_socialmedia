@@ -1,10 +1,10 @@
 /*--Media Queries for small laptops and big tablets--*/
 @media screen and (max-width:1200px){
     .container{
-        width:96%;
+        width:98%;
     }
     main .container {
-        grid-template-columns:5rem auto 30vw;
+        grid-template-columns:5rem auto ;
         gap:1rem;
     }
     .left{
@@ -22,8 +22,20 @@
         display:none;
     }
     .customize-theme .card{
-        width:80vw;
+        width:100%;
+       
     }
+  .customize-theme .background .choose-bg >div{
+         width:70px;
+
+  }
+  .customize-theme .choose-bg >div span{
+    display: none;;
+  }
+  .customize-theme .background .choose-bg {
+    display:flex;
+    justify-content: space-between;
+  }
     main  .right {
         display: none;
     }
@@ -36,7 +48,7 @@
         display: none;
     }
     main .container{
-        grid-template-columns: 0 auto 5rem;
+        grid-template-columns: 0 auto ;
 
     }
     main .container .left {

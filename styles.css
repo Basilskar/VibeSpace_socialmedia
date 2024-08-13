@@ -48,6 +48,9 @@ body{
  width: 80%;
  margin:0 auto; 
 }
+.text{
+  font-size:11px;
+}
 .profile-photo{
     width:2.7rem;
     border-radius: 50%;
@@ -446,6 +449,8 @@ width:100;
         top:var(--sticky-top-right);
         bottom:0;
         line-height: 0.3;
+        margin-left:3rem;
+        width:100%;
     }
     .right .messages{
         background: var(--color-white);

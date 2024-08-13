@@ -14,6 +14,7 @@ const fontSizes = document.querySelectorAll('.choose-size span'); // Fixed: Use 
 
 var root = document.querySelector(':root');
 const colorpalette =document.querySelectorAll('.choose-color span');
+const themeModalContent=document.querySelector('.card');
 
 const bg1=document.querySelector('.bg-1');
 const bg2=document.querySelector('.bg-2');
@@ -65,14 +66,16 @@ messagesNotification.addEventListener('click', () => {
 });
 
 // === Theme Customization ===
+
 // Open theme customization modal
 const openThemeModal = () => {
     themeModal.style.display = 'grid';
 }
 
-// Close theme customization modal
+// Close theme customization modal when clicking on empty space inside the modal
 const closeThemeModal = (e) => {
-    if (e.target.classList.contains('customize-theme')) {
+    // Check if the click is on the empty space inside the modal, not on the modal content
+    if (e.target === themeModalContent) {
         themeModal.style.display = 'none';
     }
 }
@@ -80,6 +83,7 @@ const closeThemeModal = (e) => {
 // Event listeners for theme modal
 themeModal.addEventListener('click', closeThemeModal);
 theme.addEventListener('click', openThemeModal);
+
 //remove active class from spans
 const removeSizeSelector = () => {
     fontSizes.forEach(size =>{

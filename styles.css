@@ -26,6 +26,10 @@
     --sticky-top-right: -18rem;
 
 }
+/*--to avoid line while clicking on text*/
+* {
+  user-select: none;
+}
 
 *, *::before::after{
     margin: 0;
@@ -449,7 +453,7 @@ width:100;
         top:var(--sticky-top-right);
         bottom:0;
         line-height: 0.3;
-        margin-left:3rem;
+        margin-left:2.5rem;
         width:100%;
     }
     .right .messages{
@@ -589,6 +593,7 @@ width:100;
   /*---Font Size--*/
   .customize-theme .font-size {
     margin-top: 5rem;
+    
 
   }
   .customize-theme .font-size >div{

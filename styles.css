@@ -280,6 +280,7 @@ width:100;
 
    /*----Middle--*/
  
+
    .middle .stories {
     display: flex;
     justify-content: space-between;
@@ -352,7 +353,7 @@ width:100;
 
    /*---Create post--*/
    .middle .create-post {
-    width:100%;
+    width:94%;
     display: flex;
     align-items: center;
     justify-content: space-between;
